@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "tum-quantum-entropy-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "TUM Munich",
+        "PROJECT_TICKER": "TUMQRNG"
+      },
+      "tools": [
+        {
+          "name": "verify_tumqrng_invariants",
+          "description": "Verifies deterministic invariants for TUM Quantum Entropy AI on TUM Munich."
+        },
+        {
+          "name": "execute_tumqrng_action",
+          "description": "Executes authenticated Quantum state transition."
+        }
+      ]
+    }
+  }
+}
